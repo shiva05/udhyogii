@@ -1,0 +1,12 @@
+.register {
+  display: block;
+  overflow: hidden;
+  height: calc(100vh - 160px);
+  background: url(../../../assets/images/registration.jpg) no-repeat;
+  background-size: 48% 100%;
+  overflow-y: auto;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+}

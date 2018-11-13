@@ -1,0 +1,55 @@
+.companies {
+  display: block;
+  overflow: hidden;
+  padding: 0px 0 50px;
+
+  .h2 {
+    color: #2a384d;
+    margin: 0 0 30px;
+  }
+
+  .companyList {
+    display: inline-block;
+  }
+
+  .banner {
+    display: block;
+    overflow: hidden;
+    background: url(../../../assets/images/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    text-align: center;
+
+    h2 {
+      color: #fff;
+      margin: 80px 0 40px;
+      font-weight: bold;
+    }
+
+    input, select {
+      background: #fff;
+      border-radius: 0;
+      height: 40px;
+      margin-right: 2px;
+      display: inline-block;
+      padding: 0 10px;
+    }
+
+    .skills {
+      width: 350px;
+    }
+
+    .location {
+      width: 250px;
+    }
+
+    .experience {
+      width: 150px;
+    }
+
+    .salary {
+      width: 150px;
+    }
+  }
+}

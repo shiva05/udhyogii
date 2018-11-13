@@ -1,0 +1,48 @@
+
+
+<div class="companies">
+  <div class="banner">
+    <div class="container">
+      <h2>Build Your Carrier With Trust</h2>
+
+      <form (ngSubmit)="onSubmit()">
+        <input type="text" name="skillset" class="skills" placeholder="skills, company" />
+        <input type="text" name="location" class="location" placeholder="location" />
+        <select name="experience" class="experience">
+          <option selected>select</option>
+          <option *ngFor="let list of experience" value="{{list}}">
+            {{ list }}
+          </option>
+        </select>
+        <select name="salary" class="salary">
+          <option selected>select</option>
+          <option *ngFor="let list of salary" value="{{list}}">
+            {{ list }}
+          </option>
+        </select>
+        <button type="submit" [disabled]="!jobsearch.valid" class="udh-btn-primary">Search</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h2>List of companies associated with us</h2>
+    <div class="companyList col-sm-3 col-xs-6">
+      <img src="../../../assets/images/emplogo1.jpg" alt="company logo" width="50" />
+      <span>Company name</span>
+    </div>
+    <div class="companyList col-sm-3 col-xs-6">
+      <img src="../../../assets/images/emplogo1.jpg" alt="company logo" width="50" />
+      <span>Company name</span>
+    </div>
+    <div class="companyList col-sm-3 col-xs-6">
+      <img src="../../../assets/images/emplogo1.jpg" alt="company logo" width="50" />
+      <span>Company name</span>
+    </div>
+    <div class="companyList col-sm-3 col-xs-6">
+      <img src="../../../assets/images/emplogo1.jpg" alt="company logo" width="50" />
+      <span>Company name</span>
+    </div>
+  </div>
+</div>

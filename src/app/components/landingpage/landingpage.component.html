@@ -1,0 +1,107 @@
+<div class="banner">
+  <div class="container">
+    <h2>Build Your Carrier With Trust</h2>
+
+    <form (ngSubmit)="onSubmit()">
+      <input type="text" name="skillset" class="skills" placeholder="skills, company"/>
+      <input type="text" name="location" class="location" placeholder="location"/>
+      <select name="experience" class="experience">
+        <option selected>select</option>
+        <option *ngFor="let list of experience" value="{{list}}">
+          {{ list }}
+        </option>
+      </select>
+      <select name="salary" class="salary">
+        <option selected>select</option>
+        <option *ngFor="let list of salary" value="{{list}}">
+          {{ list }}
+        </option>
+      </select>
+      <button type="submit" [disabled]="!jobsearch.valid" class="udh-btn-primary">Search</button>
+    </form>
+  </div>
+</div>
+
+<div class="featuredJobs greyBg">
+  <div class="container">
+    <h2>Featured Jobs</h2>
+    <div class="jobslist">
+      <div class="companyLogo">
+        <img src="../../../assets/images/emplogo1.jpg" alt="conapny logo" class="img-responsive" />
+      </div>
+      <div class="companydetails">
+        <h3 class="companyName">
+          Technical Database Engineer
+        </h3>
+        <p class="jobtitle">Datebase Management Company</p>
+        <span class="jobType">Permanent</span>
+        <span class="location">Hyderabad</span>
+      </div>
+      <div class="action">
+        <a href="javascript:;" class="udh-btn-primary">Details</a>
+      </div>
+    </div>
+
+    <div class="jobslist">
+      <div class="companyLogo">
+        <img src="../../../assets/images/emplogo1.jpg" alt="conapny logo" class="img-responsive" />
+      </div>
+      <div class="companydetails">
+        <h3 class="companyName">
+          Technical Database Engineer
+        </h3>
+        <p class="jobtitle">Datebase Management Company</p>
+        <span class="jobType">Permanent</span>
+        <span class="location">Hyderabad</span>
+      </div>
+      <div class="action">
+        <a href="javascript:;" class="udh-btn-primary">Details</a>
+      </div>
+    </div>
+
+
+    <div class="col-xs-12 text-center"> <a href="javascript" routerLink="/featuredjobs" class="udh-btn-primary">View all Featured Jobs</a></div>
+  </div>
+</div>
+
+<div class="latestJobs ">
+  <div class="container">
+    <h2>Latest Jobs</h2>
+    <div class="jobslist">
+      <div class="companyLogo">
+        <img src="../../../assets/images/emplogo1.jpg" alt="conapny logo" class="img-responsive" />
+      </div>
+      <div class="companydetails">
+        <h3 class="companyName">
+          Technical Database Engineer
+        </h3>
+        <p class="jobtitle">Datebase Management Company</p>
+        <span class="jobType">Permanent</span>
+        <span class="location">Hyderabad</span>
+      </div>
+      <div class="action">
+        <a href="javascript:;" class="udh-btn-primary">Details</a>
+      </div>
+    </div>
+
+    <div class="jobslist">
+      <div class="companyLogo">
+        <img src="../../../assets/images/emplogo1.jpg" alt="conapny logo" class="img-responsive" />
+      </div>
+      <div class="companydetails">
+        <h3 class="companyName">
+          Technical Database Engineer
+        </h3>
+        <p class="jobtitle">Datebase Management Company</p>
+        <span class="jobType">Permanent</span>
+        <span class="location">Hyderabad</span>
+      </div>
+      <div class="action">
+        <a href="javascript:;" class="udh-btn-primary">Details</a>
+      </div>
+    </div>
+
+
+    <div class="col-xs-12 text-center"> <a href="javascript" routerLink="/latestjobs"  class="udh-btn-primary">View all Latest Jobs</a></div>
+  </div>
+</div>

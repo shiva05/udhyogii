@@ -1,0 +1,25 @@
+.job-search {
+  display: block;
+  overflow: hidden;
+
+  .form-control {
+    border: 0;
+  }
+
+  .jobs-list {
+    display: block;
+    overflow: hidden;
+
+    h3 {
+      margin-top: 0;
+    }
+
+    .item {
+      padding: 15px;
+      margin: 15px 0;
+      border: 1px solid #d8d8d8;
+      display: block;
+      overflow: hidden;
+    }
+  }
+}

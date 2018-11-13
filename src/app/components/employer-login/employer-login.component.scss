@@ -1,0 +1,11 @@
+.login {
+  display: block;
+  overflow: hidden;
+  height: calc(100vh - 160px);
+  background: url(../../../assets/images/companylogin.jpg) no-repeat;
+  background-size: 48% 100%;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+}

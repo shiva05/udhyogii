@@ -1,0 +1,74 @@
+{
+    "profile": {
+        "10245869": [
+            {
+			"FirstName": "shiva",
+			"LastName": "krishna",
+			"Email": "shiva@123.com",
+			"mobileNumber": "9700346495",
+			"alternateNumber": "8008400780",
+			"Gender": "Male",
+			"Permanent Address": "Plot NO 79/a, rtc colony, chintalkunta checkpost",
+			"State": "telangana",
+			"Postcode": "500074",
+			"Qualification": "Btech",
+			"Skills": "Html. css, js , Jquery ",
+			"Primary Skill": "Html. css, js , Jquery ",
+			"Hobbies": "Playing Cricket",
+			"Total Experience": "5years",
+			"Current/Last Working Company": "People Tech IT consultancy PVT.LTD",
+			"Time since working in latest company": "3years",
+			"Date of Joining": "6th April 2015",
+			"Type of Employee": "Permanent",
+			"Designation": "UI Developer",
+			"Annual Salary": "6lakhs",
+			"Payslip and Offerletter": "Attachment",
+			"Notice Period": "2months",
+                "Previous Company 1": "Quadreant Software solutions",
+                "Duration": "8months",   need multi level here
+
+		    }
+        ],
+        "1234568": [
+            {"model":"Taurus", "doors":4},
+            {"model":"Escort", "doors":4}
+        ],
+        "98765432": [
+            {"model":"Taurus", "doors":4},
+            {"model":"Escort", "doors":4}
+        ]
+    }
+}
+
+Branding and Awareness
+
+getApplicationInfo
+
+
+vm.shared.capabilitySectionTitle = digitaltransform.PillarName ? digitaltransform.PillarName : '';
+
+
+
+angular.forEach(pillar.Capabilities, function (capability, capabilityIdx) {
+                        if (capability.IsNew) {
+                            capability.IsNew = false;
+                        }
+						capability.BaseCapabilityId = 0;
+
+                        angular.forEach(capability.Enablers, function (enabler, enablerIdx) {
+                            if (enabler.IsNew) {
+                                enabler.IsNew = false;
+                            }
+							enabler.BaseEnablerId = 0;
+                            angular.forEach(enabler.EnablerLevels, function (enablerlevel, enablerlevelIdx) {
+                                if (enablerlevel.IsNew) {
+                                    enablerlevel.IsNew = false;
+                                }
+							enablerlevel.BaseEnablerLevelId = 0;
+                            });
+                        });
+                    });
+
+
+
+$scope.$parent.studio.saveAsIndustryDatapopup();

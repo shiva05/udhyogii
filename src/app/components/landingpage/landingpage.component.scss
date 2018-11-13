@@ -1,0 +1,113 @@
+.banner {
+  display: block;
+  overflow: hidden;
+  background: url(../../../assets/images/banner.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  text-align: center;
+
+  h2 {
+    color: #fff;
+    margin: 80px 0 40px;
+    font-weight: bold;
+  }
+
+  input, select {
+    background: #fff;
+    border-radius: 0;
+    height: 40px;
+    margin-right: 2px;
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  .skills {
+    width: 350px;
+  }
+
+  .location {
+    width: 250px;
+  }
+
+  .experience {
+    width: 150px;
+  }
+
+  .salary {
+    width: 150px;
+  }
+}
+
+.featuredJobs,
+.latestJobs {
+  display: block;
+  overflow: hidden;
+  padding: 30px 0;
+
+  h2 {
+    color: #000;
+    margin: 30px 0;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .jobslist {
+    display: inline-block;
+    overflow: hidden;
+    width: calc((100% - 20px) / 2);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e3e3e3;
+    background: #fff;
+    padding: 10px;
+
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+
+    .companyLogo {
+      width: 80px;
+      display: inline-block;
+      float: left;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .companydetails {
+      display: inline-block;
+      width: calc(100% - 190px);
+      float: left;
+
+      .companyName {
+        font-size: 18px;
+        color: #000;
+        font-weight: 700;
+        margin-top: 0;
+      }
+
+      .jobtitle {
+        color: #00a2ff;
+        padding: 7px 0;
+      }
+
+      .jobType, .location {
+        color: #000;
+        font-size: 14px;
+      }
+
+      .location {
+        opacity: .7;
+      }
+    }
+
+    .action {
+      width: 110px;
+      float: left;
+      text-align: right;
+      padding-top: 25px;
+    }
+  }
+}

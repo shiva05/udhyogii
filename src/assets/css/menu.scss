@@ -1,0 +1,178 @@
+@import 'global';
+@import 'colors';
+//@import 'https://fonts.googleapis.com/css?family=Roboto';
+.side-menu {
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    margin: 0;
+    height: calc( 100vh - 60px);
+    width: 60px;
+    list-style-type: none;
+    background: #1d232a;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: width .5s;
+    z-index: 2;
+    padding: 0 10px;
+}
+.side-menu:hover,
+.side-menu.open {
+    width: 300px;
+}
+
+.side-menu li {
+    width: 280px;
+    border-bottom: 1px solid #2d3339;
+    &.multi-level {
+      
+        ul.first-level {
+            margin-left: 60px;
+            list-style: none;
+            width: calc(100% - 80px);
+            display: none;
+            li {
+                @extend %block;
+                position: relative;
+                width: 100%;
+                a {
+                    width: 100%;
+                    padding: 10px 0 10px 10px;
+                    height: auto;
+                    span {
+                        width: auto;
+                        height: auto;
+                        line-height: normal;
+                    }
+                }
+                &.second-level {
+                    >a {
+                        
+                        .icon {
+                            float: right;
+                            padding-right: 10px;
+                        }
+                    }
+                    ul {
+                        padding: 0;
+                        border-top: 1px solid #2d3339;
+                        display: none;
+                        margin-left: 15px;
+                        opacity: .6;
+                    }
+                    &.active ul {
+                        display: block;
+                    }
+                    
+                    &:hover ul{
+                        display: block;                        
+                    }
+                }
+            }
+        }
+        &:hover ul.first-level{
+            display: none !important;
+        }
+        &.active:hover ul.first-level{
+            display: block !important;
+        }
+    }
+    &.active{
+            >a {
+                border-left: 3px solid $Active-color;
+                border-bottom: 1px solid #2d3339;
+                color: $Active-color;
+                .icon {
+                    float: right;
+                    padding-right: 15px;
+                }
+            }
+        }
+}
+
+.side-menu{
+    li.multi-level ul.first-level,
+    li.multi-level.active ul.first-level{
+        display: none;
+    }
+}
+.side-menu{
+    li.multi-level:hover ul.first-level,
+    li.multi-level.active:hover ul.first-level{
+        display: block;
+    }
+}
+.side-menu:hover{
+    li.multi-level.active ul.first-level{
+        display: block;
+    }
+}
+.side-menu.open{
+    li.multi-level.active ul.first-level{
+        display: block !important;
+    }
+}
+.side-menu.open{
+        li.multi-level ul.first-level{
+            display: none !important;
+        }
+}
+.menu-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    z-index:4;
+    height: 100vh;
+    
+    &.show{
+        display: block;
+    }
+}
+.side-menu li span {
+    font-size: 20px;
+    width: 40px;
+    height: 60px;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 60px;
+}
+.side-menu li a {
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFF;
+    height: 60px;
+    border-left:3px solid $Secondary-color; 
+    
+    &:hover{
+        color: $Active-color;
+        border-left: 3px solid $Active-color;
+    }
+}
+.side-menu li a:hover,
+.side-menu li:first-child a {
+    background: #1d232a;
+    display: block;
+}
+.sidenav {
+    position: relative;
+    z-index: 9;
+    .menu {
+        display: inline-block;
+        overflow: hidden;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        background: #1d232a;
+        float: left;
+        border-bottom: 1px solid #2d3339;
+        a {
+            color: #fff;
+        }
+    }
+}

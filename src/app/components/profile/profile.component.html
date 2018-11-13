@@ -1,0 +1,382 @@
+<section class="EmployeeDetails">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <form class="form-horizontal" role="form">
+        <fieldset>
+
+          <!-- Form Name -->
+          <legend>Details</legend>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">First Name</label>
+            <div class="col-sm-4">
+              <input type="text" placeholder="First Name" class="form-control">
+            </div>
+
+            <label class="col-sm-2 control-label" for="textinput">Last Name</label>
+            <div class="col-sm-4">
+              <input type="text" placeholder="Last Name" class="form-control">
+            </div>
+          </div>
+
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Email</label>
+            <div class="col-sm-10">
+              <input type="email" placeholder="Email" class="form-control">
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Mobile Number</label>
+            <div class="col-sm-10">
+              <input type="text" placeholder="Mobile Number" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Alternate Number</label>
+            <div class="col-sm-10">
+              <input type="text" placeholder="Alternate Number" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Gender</label>
+            <div class="col-sm-10">
+              <label class="radio-inline">
+                <input type="radio" name="sex" id="inlineCheckbox1" value="male">
+                Male
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="sex" id="inlineCheckbox2" value="female">
+                Female
+              </label>
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Permanent Address</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" name="address" placeholder="Address"></textarea>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">State</label>
+            <div class="col-sm-4">
+              <input type="text" placeholder="State" class="form-control">
+            </div>
+
+            <label class="col-sm-2 control-label" for="textinput">Postcode</label>
+            <div class="col-sm-4">
+              <input type="text" placeholder="Post Code" class="form-control">
+            </div>
+          </div>
+
+
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Qualification</label>
+            <div class="col-sm-10">
+              <select class="form-control">
+                <option value="-1" selected="">Select</option>
+                <option value="">Not Pursuing Graduation</option>
+                <option value="">B.A</option>
+                <option value="">B.Arch</option>
+                <option value="">B.Des.</option>
+                <option value="">B.El.Ed</option>
+                <option value="">B.P.Ed</option>
+                <option value="">B.U.M.S</option>
+                <option value="">BAMS</option>
+                <option value="">BCA</option>
+                <option value="">B.B.A/ B.M.S</option>
+                <option value="">B.Com</option>
+                <option value="">B.Ed</option>
+                <option value="">BDS</option>
+                <option value="">BFA</option>
+                <option value="">BHM</option>
+                <option value="">B.Pharma</option>
+                <option value="">B.Sc</option>
+                <option value="">B.Tech/B.E.</option>
+                <option value="">BHMS</option>
+                <option value="">LLB</option>
+                <option value="">MBBS</option>
+                <option value="">Diploma</option>
+                <option value="">BVSC</option>
+                <option value="">Other</option>
+              </select>
+            </div>
+            <div class="col-sm-10 col-sm-offset-2 upload">
+              <div class="container" style="border: 2px solid #ccc;border-style: dotted;height:100%;width:100%;"></div>
+              <label id="idlabel" class="mdl-button mdl-js-button mdl-button--raised">
+                <input type="file" id="files" name="files[]" multiple />
+                <span class="btn btn-default">Upload your Educational Documents </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Skills</label>
+            <div class="col-sm-10">
+              <input type="text" placeholder="Skills" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Primary Skill</label>
+            <div class="col-sm-10">
+              <input type="text" placeholder="Skills" class="form-control">
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Hobbies</label>
+            <div class="col-sm-10">
+              <input type="text" placeholder="Hobbies" class="form-control">
+            </div>
+          </div>
+
+
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Total Experience</label>
+            <div class="col-sm-10 no-pad-exp">
+              <div class="col-xs-2">
+                <label>Years</label>
+                <select class="form-control">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div>
+              <div class="col-xs-2">
+                <label> Months</label>
+                <select class="form-control">
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Current/Last Working Company</label>
+            <div class="col-sm-10">
+              <input type="text" placeholder="Comapny Name" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Time since working in latest company</label>
+            <div class="col-sm-10 no-pad-exp">
+              <div class="col-xs-3">
+                <select class="form-control">
+                  <option value="-1" selected="">Select</option>
+                  <option value="">Jan</option>
+                  <option value="">Feb</option>
+                  <option value="">Mar</option>
+                  <option value="">Apr</option>
+                  <option value="">May</option>
+                  <option value="">Jun</option>
+                  <option value="">Jul</option>
+                  <option value="">Aug</option>
+                  <option value="">Sep</option>
+                  <option value="">Oct</option>
+                  <option value="">Nov</option>
+                  <option value="">Dec</option>
+                </select>
+              </div>
+              <div class="col-xs-3">
+                <select class="form-control">
+                  <option>2005</option>
+                  <option>2006</option>
+                  <option>2007</option>
+                  <option>2008</option>
+                  <option>2009</option>
+                  <option>2010</option>
+                  <option>2011</option>
+                  <option>2012</option>
+                  <option>2013</option>
+                  <option>2014</option>
+                  <option>2015</option>
+                  <option>2016</option>
+                  <option>2017</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Date of Joining</label>
+            <div class="col-sm-10">
+              <input type="date" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Type of Employee</label>
+            <div class="col-sm-10">
+              <label class="radio-inline">
+                <input type="radio" name="emptype" id="inlineCheckbox3" value="Permanent">
+                Permanent
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="emptype" id="inlineCheckbox4" value="Contract">
+                Contract
+              </label>
+            </div>
+          </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Designation</label>
+            <div class="col-sm-10">
+              <input type="text" placeholder="Designation" class="form-control">
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Annual Salary</label>
+            <div class="col-sm-10">
+              <input type="text" placeholder="Annual Salary" class="form-control">
+            </div>
+          </div>
+
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Payslip and Offerletter</label>
+            <div class="col-sm-10 upload">
+              <div class="container" style="border: 2px solid #ccc;border-style: dotted;height:100%;width:100%;"></div>
+              <label id="idlabel" class="mdl-button mdl-js-button mdl-button--raised">
+                <input type="file" id="files" name="files[]" multiple />
+                <span class="btn btn-default">Upload your Payslips</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Notice Period</label>
+            <div class="col-sm-10">
+              <input type="text" placeholder="Notice Period In days" class="form-control">
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Previous Company 1</label>
+            <div class="col-sm-10 no-pad-exp">
+              <div class="col-xs-9">
+                <input type="text" placeholder="Previous Comapny Name" class="form-control">
+              </div>
+              <div class="col-xs-3">
+                <input type="text" placeholder="Duration" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Previous Company 2</label>
+            <div class="col-sm-10 no-pad-exp">
+              <div class="col-xs-9">
+                <input type="text" placeholder="Previous Comapny Name" class="form-control">
+              </div>
+              <div class="col-xs-3">
+                <input type="text" placeholder="Duration" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Previous Company 3</label>
+            <div class="col-sm-10 no-pad-exp">
+              <div class="col-xs-9">
+                <input type="text" placeholder="Previous Comapny Name" class="form-control">
+              </div>
+              <div class="col-xs-3">
+                <input type="text" placeholder="Duration" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Certifications</label>
+            <div class="col-sm-10 upload">
+              <input type="text" placeholder="Certifications" class="form-control">
+              <div class="clearfix">&nbsp;</div>
+              <div class="container" style="border: 2px solid #ccc;border-style: dotted;height:100%;width:100%;"></div>
+              <label id="idlabel" class="mdl-button mdl-js-button mdl-button--raised">
+                <input type="file" id="files" name="files[]" multiple />
+                <span class="btn btn-default">Upload your Certifications Documents </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Achievement</label>
+            <div class="col-sm-10 upload">
+              <input type="text" placeholder="Achievements" class="form-control">
+              <div class="clearfix">&nbsp;</div>
+              <div class="container" style="border: 2px solid #ccc;border-style: dotted;height:100%;width:100%;"></div>
+              <label id="idlabel" class="mdl-button mdl-js-button mdl-button--raised">
+                <input type="file" id="files" name="files[]" multiple />
+                <span class="btn btn-default">Upload your Achievement Documents </span>
+              </label>
+            </div>
+          </div>
+
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="textinput">Resume</label>
+            <div class="col-sm-10 upload">
+              <div class="container" style="border: 2px solid #ccc;border-style: dotted;height:100%;width:100%;"></div>
+              <label id="idlabel" class="mdl-button mdl-js-button mdl-button--raised">
+                <input type="file" id="files" name="files[]" multiple />
+                <span class="btn btn-default">Upload Resume</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="pull-right">
+                <button type="submit" class="btn btn-default">Cancel</button>
+                <button type="submit" class="btn btn-primary">Save</button>
+              </div>
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+    </div><!-- /.col-lg-12 -->
+  </div><!-- /.row -->
+</section>

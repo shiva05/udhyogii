@@ -1,0 +1,75 @@
+@import 'colors';
+@import 'fonts';
+//@import 'https://fonts.googleapis.com/css?family=Roboto';
+body, *{margin:0;padding: 0;box-sizing: border-box; font-family: 'robotoregular';}
+.no-pad{padding: 0 !important;}
+.no-marg{margin: 0 !important;}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin translateX($t){
+-ms-transform: $t; /* IE 9 */
+    -webkit-transform: $t; /* Safari */
+    transform: $t;
+}
+
+%block{
+    display: block;
+    overflow: hidden;
+}
+%inline-block{
+    display: inline-block;
+    overflow: hidden;
+}
+
+.form-control{
+    border-radius: 0;
+}
+.no-marg-left{
+    margin-left: 0 !important;
+}
+.Primary-btn{
+    @extend %inline-block;
+    background: $Primary-color;
+    padding: 8px 25px;
+    margin: 10px 5px;
+    color: $White;
+    text-decoration: none;
+    font-weight:300;
+    border: 1px solid $Primary-color;
+
+    &:hover{
+        color: $White;
+        text-decoration: none;
+    }
+}
+
+.Secondary-btn{
+    @extend %inline-block;
+    background: None;
+    padding: 8px 25px;
+    margin: 10px 5px;
+    color: $Primary-color;
+    text-decoration: none;
+    font-weight: 300;
+    border: 1px solid $Primary-color;
+
+    &:hover{
+        color: $White;
+        text-decoration: none;
+        background: $Primary-color;
+    }
+}
+
+select::-ms-expand {
+                display: none;
+                }
+@media all and (min-width: 768px){
+    .no-pad-exp{
+        padding: 0;
+    }
+}

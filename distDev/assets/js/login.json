@@ -1,0 +1,21 @@
+{
+	"login": [{
+			"userName": "shiva",
+			"rollNo": 10245869,
+			"password": "shiva@123",
+			"mobileNumber": "9700346495"
+		},
+              {
+			"userName": "raju",
+			"rollNo": 1234568,
+			"password": "raju@123",
+			"mobileNumber": "8885280869"
+		},
+              {
+			"userName": "vishwanath",
+			"rollNo": 98765432,
+			"password": "vishwanath@123",
+			"mobileNumber": "9989740902"
+		}
+	]
+}

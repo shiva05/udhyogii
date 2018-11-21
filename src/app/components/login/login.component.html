@@ -2,7 +2,7 @@
   <div class="container">
     <div class="col-sm-6 col-sm-offset-6">
       <h2>Login</h2>
-      <form role="form">
+      <form novalidate  #signupForm="ngForm" (ngSubmit)="Login(signupForm)">
         <fieldset>
           <div class="form-group">
             <input type="text" name="uid" id="uid" required="required" class="form" placeholder="UID(10th roll number)" />
@@ -19,7 +19,7 @@
             <p>Not a member! <a href="#" routerLink="/register">Register</a> here</p>
           </div>
           <!-- Change this to a button or input when using this as a form -->
-          <button type="submit" id="submit" name="submit" class="form-btn semibold">Login</button>
+          <button type="submit"  name="submit" class="form-btn semibold">Login</button>
         </fieldset>
       </form>
     </div>
